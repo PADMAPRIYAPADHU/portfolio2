@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+<title>Personal Portfolio website-Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+   </head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href='#header'>Home</a></li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#project'>Project</a></li>
+                <li><a href='#contact'>contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <br> <span>P</span>adma <span>P</span>riya <span>A</span>ndluri </h1>
+        </div>
+    </div>
+    </div>
+    <!--------------about---------------->
+<div id="about">
+    <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/paddu2.png">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>I am a student  from Sree Vidyanikethan Engineering College in Tirupati, specializing in Electronics and Communication Engineering, I possess a strong foundation in coding, analysis, and problem-solving. My expertise lies in Data Structures and Algorithms, and I thrive on exploring new challenges with a positive mindset and a dynamic approach.
+I am passionate about understanding the inner workings of technology and have a keen interest in unraveling complexities from unique perspectives. If you're in search of a developer, rest assured, you've found someone who embodies dedication, enthusiasm, and a knack for innovative problem-solving.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id ="skills">
+                        <ul>
+                            <li><span>C</span><br>Programming</li>
+                            <li><span>Java</span><br>Programming</li>
+                            <li><span>Python</span><br>Programming</li>
+                            <li><span>DBMS</span><br>Database storage</li>
+                            <li><span>SQL</span><br>Query language</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>DSA</span><br>Programming and Algorithms</li>
+                            <li><span>OS</span></li>
+                            <li><span>Cloud Foundations</span></li>
+                            <li><span>Cyber security</span></li>
+                            <li><span>Machine Learning</span></li>
+                            <li><span>Data Engineering</span></li>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>B-tech(ECE)</span><br>In Sree Vidyanikethan Engineering College ,Tirupathi  91%</li>
+                            <li><span>Diploma(ECE)</span><br>In GPW ,kadapa  <br>96.71%</li>
+                            <li><span>10-class</span><br>In S.V.R High School,kadapa <br> 98%</li>
+
+                            
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+</div>
+</div>
+
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title"><span>M</span>y  <span>P</span>rojects</h1>
+        <div class="project-list">
+            <div>
+                <h2>EarosmartPhone</h2>
+                <p>
+                    Innovated EaroSmartphones, a versatile all-in-one solution merging earphones and earpods. Engineered with
+                    seamless transition and magnetic connectivity,Includes the innovative ESP charging case, transforming the
+                    consumer charging experience.
+                     
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Pest and Disease Detection Using YOLOV8
+                </h2>
+                <p>
+                    Resourceful researcher adept at employing YOLOv8 for accurate pest detection and prevention in prominent
+crop varieties.
+
+                     
+                </p>
+                <a href="#">learnmore</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------contact------------------>
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p>andluripadmapriya@gmail.com</p>
+                <p>7842453905</p>
+                <a href="images/resume.png" class="btn btn2">DownloadCv</a>
+                
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                    <button type="'submit" class="btn btn2">Submit</button>
+                               </form>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+
+        </p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    } 
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    } 
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}   
+    </script>
+</body>
+   </html>
